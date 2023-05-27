@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+svg {
+  display: inline-block;
+}
+
+body {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  background: #ffffff;
+  color: #000000;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+@tailwind components;
+
+.trans {
+  transition: all 0.3s linear;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #03c3de;
+  width: 14.46px;
+  height: 14.46px;
+  opacity: 1;
+}
+
+/* target all bullets */
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  border: 0.578378px solid #2b4e8c;
+  background: white;
+  width: 14.46px;
+  height: 14.46px;
+  opacity: 1;
+}
+
+.swiper.swiper-container {
+  padding-left: 70px;
+  padding-top: 50px;
+  padding-bottom: 16px;
+}
+
+@tailwind utilities;
